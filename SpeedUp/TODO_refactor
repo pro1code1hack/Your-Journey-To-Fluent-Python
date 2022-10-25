@@ -1,0 +1,59 @@
+===================================================== Process =====================================================
+Process - Independent Instance of the Program
+
+It consists of a set of instructions that are executed by the processor in a sequential manner.
+- code
+- data
+- state information
+It has separate address space and memory
+
+Hint: The computer can have a lot of such processes running at the same time.
+
+===================================================== Thread =====================================================
+Threads - Independent Path of Execution                    (tiny process)
+
+Threads - consist different sequences of instructions that are executed by the processor in a sequential manner.
+Threads - exist only within a process (as a part).
+Threads - basic units, which OS schedules for execution and manages.
+
+===================================================== Life World Example =====================================================
+
+The task: Cook a Salad
+
+The recipe:
+    1. Cut the lettuce
+    2. Cut the tomatoes
+    3. Cut the cucumbers
+    4. Dress it up
+
+Cooking - the main process of the task.
+
+Cutting lettuce - 1 Thread of the process
+Cutting tomatoes - 2 Thread of the process
+Cutting cucumbers - 3 Thread of the process
+
+!!!!! These 3 threads are executed in parallel, but they are part of the same process.
+
+===================================================== Summary =====================================================
+
+Key points:
+    - Threads are part of the process
+    - Threads are executed in parallel
+    - Threads are independent paths of execution
+    - When one thread finishes its work, it notifies the main process that it stops and let the other threads to continue their work.
+    - Threads that belong to the same process share the same address space and memory. (They CAN access the same data and executable code)
+    - Every process exists in its own address space and memory. (They CAN'T access the same data and executable code)
+
+Summary:
+    - Threads are "lightweight processes" - require less overhead to create and terminate.
+    - OS switches between threads of the same process faster than between processes.
+
+===================================================== Summary =====================================================
+
+# How to communicate between processes?
+===================================================== IPC - Inter Process Communication - communication between processes =====================================================
+Communication between processes.
+    Sockets and pipes
+    Shared memory space
+    Remote procedure calls (RPC)
+
