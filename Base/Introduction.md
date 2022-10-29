@@ -6,7 +6,7 @@ However, it causes some difficulties when writing complex programs.
 Python is also a relatively slow programming language
 In addition, you can download all versions of python because the first source is open to the public!
 It is not for nothing that Python is used in such programs as Google Browser, YouTube, and even NASA.
-Python is quite a versatile language, with its help you can write such things as:
+Хочу мяса!Хочу мяса!Хочу мяса!Хочу мяса!
 system programming, graphical and web applications, as well as database applications. 
 In addition, Python works perfectly and adapts to systems that were written in C++,
 which expands the possibilities of its use.
