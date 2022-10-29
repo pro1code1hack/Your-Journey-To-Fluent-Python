@@ -1,0 +1,83 @@
+# print/input
+## print
+To output any data to the screen we use the `print()` function. And in brackets you type
+what you want to output, if it is a text you have to put it in quotes. 
+For example:
+```python
+print("Fuck you")
+```
+#### Output:
+```
+Fuck you
+```
+you can also write text in singular quotes, like that:
+```python
+print('')
+print("")
+```
+The things we write in quotes in the function `print()` are called arguments,
+or parameters.
+Command print allows you to write multiple arguments, in that case, you have
+to separate them with comas:
+```python
+print('hello,', 'how are', 'you?')
+```
+#### Output:
+```
+hello, how are you?
+```
+## sep and end
+The real syntax of function `print()` looks like that:
+```
+print(*objects, sep = ' ', end = '\n')
+```
+where `sep` means what separates objects and `end` is how the output ends:
+```python
+print('1', '2', '3')
+print('1', '2', '3', sep = '@')
+print('1', '2', '3', sep = '@', end = '?')
+```
+#### Output:
+```
+1 2 3
+1@2@3
+1@2@3?
+```
+## input
+Now we know how to output any data to the screen, but how to make user input 
+something and save the thing he input. To do that we use function `input()`:
+```python
+print('what is your name?')
+name = input()
+print('your name is', name)
+```
+#### Output:
+```
+what is your name?
+Sasha
+your name is Sasha
+```
+In this code we firstly print "what is your name" phrase. after that programm waits for user to 
+write his name and press enter, otherwise, it will not continue. Then we give variable `name` value of
+the input name and in the end we print that your name is `name`.
+Because this code construction is pretty often, you can print a text as a parameter of a function
+`input()`, it would look like that:
+```python
+name = input('what is your name?')
+print('your name is', name)
+```
+But what if you want user to input an integer not a text. In that case you have to make the input
+have integer or float or something else data type, you can do it using `int()`, or `float()` 
+commands:
+```python
+age = int(input('what is your age'))
+print('your age is', age)
+```
+#### Output:
+```
+what is your name?
+Sasha
+your name is Sasha
+```
+in this case you could use default `input()`, but very often you will have to do arithmetical 
+with input variables and then giving `input()` correct data types will be necessary. 
