@@ -82,6 +82,7 @@ _A class creates a local namespace where all its attributes are defined. Attribu
 _As soon as we define a class, a new class object is created with the same name. This class object allows to access
 the different attributes as well as to instantiate new objects of that class._
 
++ one more Example☺
 + Example:
 
 ```python
