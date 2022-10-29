@@ -13,7 +13,7 @@ else:
 Program asks user to write  his country and if it is true that variable `country` equals 
 `'Ukraine'`then it prints:
 ```
-you are Ukrainian
+you are Ukrainian 
 ```
 else:
 ```
