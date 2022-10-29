@@ -18,7 +18,7 @@ Also, everyone who plans to program in Python must accept the philosophy of this
 4.Complex is better than complicated;
 5.Flat is better than nested;
 6.Sparse is better than dense;
-7.Readability counts;
+Beautiful' is not better than ugly
 8.Special cases aren't special enough to break the rules;
 9.Although practicality beats purity;
 10.Errors should never pass silently;
