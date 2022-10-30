@@ -130,12 +130,11 @@ print(s * 5)        # HiHiHiHiHi
 ```
 ## Strings methods
 The most popular string methods
+### str.capitalize()
 ```python
-# capitalize()    Converts the first character to upper case
-test_0 = 'hello WoRLd'
-test_1 = "HI EHOR"
 print(test_0.capitalize())      # Hello world
 print(test_1.capitalize())      # Hi ehor
+```
 # count()    Returns the number of times a specified value occurs in a string
 print(test_0.count("o"))        # 2
 print(test_1.count("h"))        # 0
