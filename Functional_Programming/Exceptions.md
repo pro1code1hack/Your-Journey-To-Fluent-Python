@@ -72,7 +72,8 @@ AssertionError: This code runs on Linux only.
 ```
 #### 3. The try and except Block: Handling Exceptions
 ##### The try and except block in Python is used to catch and handle exceptions. Python executes code following the try statement as a “normal” part of the program. The code that follows the except statement is the program’s response to any exceptions in the preceding try clause.
-![alt text](../Images/TryExcept.png)
+<img src="..//Images/ExceptionsTryExcept.png" alt="Alt text">
+
 ##### As you saw earlier, when syntactically correct code runs into an error, Python will throw an exception error. This exception error will crash the program if it is unhandled. The except clause determines how your program responds to exceptions.
 #### Example 
 ```python
@@ -172,3 +173,4 @@ UWU
 
 ##### "Learn Python".https://www.learnpython.dev/ 
 ##### https://www.learnpython.dev/03-intermediate-python/40-exceptions/10-all-about-exceptions/
+<img src="..//Images/ExceptionsHandlingGirl.png" alt="Alt text">
