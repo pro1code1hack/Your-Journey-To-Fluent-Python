@@ -5,8 +5,8 @@
 2. Провести много аналогий из жизни ( добавить свои слова в пример , тд тп)
 3. Полиморфизм, Абстракция, Инкапсуляция (примеры + теоритеческие определения) ?
 4. Композиция, Агрегация !! Забыл +
-4. Перечисления ?
-5. Абстрактные классы/ Protocol +-
+4. Перечисления 
+5. Абстрактные классы/ Protocol 
 6. Интерфейсы (определение и конктретно в python что это такое) ?
 7. Конструкторы(описать) +
 8. Делегаты/События (пройдём) -
@@ -28,10 +28,9 @@
 
 ## Prioblems
 
-1. Mixin
-2. Перечесления
-3. интерфейси
-4. делегати
+1. Protocols
+2. интерфейси
+3. делегати
 
 # OOP
 
@@ -82,7 +81,25 @@ _A class creates a local namespace where all its attributes are defined. Attribu
 _As soon as we define a class, a new class object is created with the same name. This class object allows to access
 the different attributes as well as to instantiate new objects of that class._
 
-+ one more Example☺
++ Example:
+```python
+# parent class
+class Person(object):
+ 
+    # __init__ is known as the constructor
+    def __init__(self, name, idnumber):
+        self.name = name
+        self.idnumber = idnumber
+ 
+    def display(self):
+        print(self.name)
+        print(self.idnumber)
+         
+    def details(self):
+        print("My name is {}".format(self.name))
+        print("IdNumber: {}".format(self.idnumber))
+```
+
 + Example:
 
 ```python
@@ -108,7 +125,24 @@ print(Person.__doc__)
 
 _the class object could be used to access different attributes._
 _It can also be used to create new object instances (instantiation) of that class._
-+ One more Example
+```python
+class Employee():
+    def __init__(self, name, idnumber, salary, post):
+        self.name=name
+        self.name=idnumber
+        self.salary = salary
+        self.post = post
+
+         
+    def details(self):
+        print("My name is {}".format(self.name))
+        print("IdNumber: {}".format(self.idnumber))
+        print("Post: {}".format(self.post))
+ 
+ 
+# creation of an object variable or an instance
+a = Employee('Rahul', 886012, 200000, "Intern")
+```
 + Example:
 
 ```python
@@ -235,6 +269,88 @@ class FulltimeEmployee(Employee):
     def get_salary(self):
         return self.salary
 ```
+### Protocols
+_A class object is considered an implementation of a protocol if accessing all members on it results in types compatible with the protocol members.
+All things protocol related resides in typing library in Protocol class:_
+
++ Example:
+```python
+from typing import Protocol
+
+
+class Message(Protocol):
+    recipient: str
+    body: str
+
+
+class Email(Message):
+    sender: str
+    recipient: str
+    subject: str
+    body: str
+
+
+def send(message: Message):
+    ...
+
+
+email = Email()
+email.sender = 'mwatney@nasa.gov'
+email.recipient = 'mlewis@nasa.gov'
+email.subject = 'I am alive!'
+email.body = 'I survived the storm. I am alone on Mars.'
+
+send(email)  # will pass the checker
+
+```
++ Email is explicit subclass of the protocol
+
+_If a class includes a protocol in its MRO, the class is called an explicit subclass of the protocol._
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Interface
+_An interface acts as a template for designing classes. Interfaces also define methods the same as classes, but abstract methods, whereas class contains nonabstract methods._
+
+_Python interface is also a class that defines methods that can be overridden but without force enforcement. An interface also called Protocols or Duck Typing._
+_The duck typing is actually we execute a method on the object as we expected an object to have, instead of checking the type of an object._
+_If it`s the same as we expected, then we will be fine and go farther, else if it does not, things might get wrong, and for safety, we use a try..except block to handle the exceptions to check the object have the particular method or not._
+
+_As in the example code, class Fruits implement the __len__, and __contains__ methods, so on the instance of the Fruits class, we can directly use the len function to get the size and can check the membership by using the in operator._
+
++ Example:
+```python
+class Fruits :
+    def __init__( self, ele) :
+        self.__ele = ele
+    def __contains__( self, ele) :
+        return ele in self.__ele
+    def __len__( self ):
+        return len( self.__ele)
+Fruits_list = Fruits([ "Apple", "Banana", "Orange" ])
+print(len(Fruits_list))
+print("Apple" in Fruits_list)
+print("Mango" in Fruits_list)
+print("Orange" not in Fruits_list)
+```
+
+_The make_user, get_age, is_adult functions are the User abstraction interface. They are used by external (user, caller) code._
++ Example:
+```python
+def make_user(name, birthday):
+    return {
+    "name": name,
+    "birthday": birthday,
+    }
+
+def get_age(user):
+    return calculate_age(user["birthday"])
+
+def is_adult(user):
+    return get_age(user) >= 18
+
+
+```
+
 
 # "Polymorphism"
 
@@ -272,7 +388,7 @@ class Animal:
 ```
 
 ### Polymorphism With Class Methods
-
++ Example:
 ```python
 class Car():
 
@@ -307,7 +423,7 @@ for vehicle in (obj_car, obj_bus):
 _a child class gets access to the protected and public methods
 and variables of the parent class whenever it inherits it. We exploit
 this concept to implement Polymorphism using Inheritance as well._
-
++ Example:
 ```python 
 class Vehicle:
 
@@ -864,6 +980,81 @@ class Student:
 
     def __display(self):  # private method
         print('This is private method.')
+```
+# Enumeration
+_By definition, an enumeration is a set of members that have associated unique constant values. Enumeration is often called enum._
+_Python provides you with the enum module that contains the Enum type for defining new enumerations. And you define a new enumeration type by subclassing the Enum class._
+
++ Example:
+```python
+from enum import Enum
+
+
+class Color(Enum):
+    RED = "RED"
+    ORANGE = "ORANGE"
+    YELLOW = "YELLOW"
+    GREEN = "GREEN"
+    BLUE = "BLUE"
+    VIOLET = "VIOLET"
+
+
+print(dir(Color))       # ['BLUE', 'GREEN', 'ORANGE', 'RED', 'VIOLET', 'YELLOW', '__class__', '__doc__', '__members__', '__module__']
+print(Color.RED)        # Color.RED
+print(Color.RED.name)
+print(Color.RED.value)
+```
++ Example:
+```python
+class Delivery(Enum):
+    COURIER = 1
+    POST = 2
+
+
+class Order:
+    def __init__(self, delivery: Delivery):
+        self.delivery = delivery
+
+    def order_delivery(self):
+        if self.delivery == Delivery.COURIER:
+            print('Courier')
+        elif self.delivery == Delivery.POST:
+            print('Post')
+        else:
+            raise ValueError('Unknown delivery type')
+
+
+print(Color['RED'])
+```
+1. First, import the Enum type from the enum module:
+2. Second, define the Color class that inherits from the Enum type:
+3. Third, define the members of the Color enumeration:
++ In this example, the Color is an enumeration. The RED, GREEN, and BLUE are members of the Color enumeration. They have associated values 1, 2, and 3.
+
+
+# Deligation
+__
+# ++++++++++++++++++++++
+
+```python
+class Bar:
+    def run(self):
+        self.go("fast")
+
+    def go(self, msg):
+        print(f"Bar.go({msg})")
+
+
+class Bus:
+    def __init__(self, name):
+        self.name = name
+
+    def go(self, msg):
+        print(f"{self.name} is going {msg}!")
+
+
+bus = Bus("Yellow bus")
+Bar.run(bus)  # prints "Yellow bus is going fast!"
 ```
 
 # Class method and static method in Python
