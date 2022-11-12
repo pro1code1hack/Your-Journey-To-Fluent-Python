@@ -75,9 +75,24 @@ print('your age is', age)
 ```
 #### Output:
 ```
-what is your name?
-Sasha
-your name is Sasha
+what is your age?
+14
+your age is 14
 ```
 in this case you could use default `input()`, but very often you will have to do arithmetical 
 with input variables and then giving `input()` correct data types will be necessary. 
+## examples of real usage:
+Knowing arithmetical operations and `print`, `input` functions we can
+create primitive calculator:
+```python
+a = float(input("number a:"))
+b = float(input("number b:"))
+print("a + b =", a+b)
+print("a - b =", a-b)
+print("a * b =", a*b)
+print("a / b =", a/b)
+```
+In this program we firstly ask user to input two numbers: a and b 
+and then making them have float datatype, so we can make arithmetical 
+operation with these two variables.
+then we print results of these primitive arithmetical operations.
