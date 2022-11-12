@@ -1,36 +1,167 @@
 # TODO
 
-0. Рассписать что такое ООП в целом, зачем оно и тд тп +
-1. Рассписать что такое self +
-2. Провести много аналогий из жизни ( добавить свои слова в пример , тд тп)
-3. Полиморфизм, Абстракция, Инкапсуляция (примеры + теоритеческие определения) ?
-4. Композиция, Агрегация !! Забыл +
-4. Перечисления 
-5. Абстрактные классы/ Protocol 
-6. Интерфейсы (определение и конктретно в python что это такое) ?
-7. Конструкторы(описать) +
-8. Делегаты/События (пройдём) -
-9. SOLID (пройдём лучше)11 +-
-11. Mixins детально описать + крутые примеры -- ?
-12. Магические методы все рассписать с примерами
-13. getters/setters (Property) +
+## The list of topics:
 
-----
+1. Introduction to OOP
+    1. Features, Why? + Examples
+    2. Concept of OOP
+    3. Classes and Objects
+    4. Comparison with Functional Programming
 
-## На будущее
 
-1. Design patterns (не учили, мб сегодня пройдём)
-2. Метаклассы ( тоже не учили, они в 80% useless)
-3. Enumeration
-4. Dataclasses
-5. __slots__
-6. Дескрипторы
+2. Classes
+    1. Definition
+    2. Attributes
+        1. Class Attributes
+        2. Instance Attributes
+    3. Methods
+        1. Constructor ```def __init__(self, ...):, def __new__(cls, ...): ```
+        2. Instance methods ```def method(self):```
+        3. Class methods ``` @classmethod```
+        4. Static methods ```@staticmethod```
+        5. Magic methods ```__methods__``` (Each magic method in a separate section with examples)
+        6. Destructor ```def __del__(self):```
 
-## Prioblems
 
-1. Protocols
-2. интерфейси
-3. делегати
+3. Inheritance
+    1. Definition
+    2. Method ```super()```
+    3. Types of Inheritance
+        1. Single/Multiple Inheritance
+        2. Multilevel/Hierarchical Inheritance
+        3. Hybrid Inheritance
+    4. Method Resolution Order (MRO) + Key problems
+
+
+4. Polymorphism
+    1. Definition
+    2. Built-in polymorphic functions (Examples)
+    3. Overloading vs Overriding
+    4. Overloading
+        1. Operator Overloading
+        2. Method Overloading
+    5. Polymorphism and Inheritance
+
+
+5. Encapsulation
+    1. Definition + (Examples)
+    2. Access Modifiers in Python
+        1. Public
+        2. Private
+        3. Protected
+    3. Name Mangling
+    4. Getter and Setter Methods without Decorators
+    5. ```@property, @setter, @getter, @deleter```
+    6. Advantages + Use Cases
+
+
+6. Abstraction(Abstract Classes, Abstract Methods)
+    1. Definition + (Examples)
+        1. Importance of Abstract Classes
+        2. When to use it?
+        3. How to use it?
+        4. What is the difference between Abstract Class and Interface/Concrete Class?
+    2. Abstract Methods
+        1. ```@abstractmethod, @abstractproperty```
+    3. Abstract Instances / Invoke Methods from Abstract Class
+    4. Implementation through Subclassing
+    5. Protocol and Duck Typing
+    6. Advantages + Use Cases
+
+
+7. Advanced Techniques
+    1. Composition/Aggregation/Association
+        1. Definition + (Examples)
+        2. Advantages + Use Cases
+        3. Differences
+
+8. Enums
+    1. Definition + (Examples)
+    2. Enumerations vs Constants
+    3. Real World Use Cases
+
+9. Events/Delegates
+    1. Definition + (Examples)
+    2. Real World Use Cases
+
+10. Mixins
+    1. Definition + (Examples)
+    2. Real World Use Cases
+
+11. Descriptors
+    1. Definition + (Examples)
+    2. Real World Use Cases
+    3. ```__get__, __set__, __delete__```
+    4. ```@property, @setter, @getter, @deleter```
+
+12. Slots
+    1. Definition + (Examples)
+    2. Real World Use Cases
+    3. ```__slots__```
+
+13. Dataclasses
+    1. Definition + (Examples)
+    2. Comparison with default classes
+    3. Real World Use Cases
+
+14. Metaclasses
+    1. Definition + (Examples)
+    2. Real World Use Cases
+    3. ```__new__, __init__, __call__```
+
+15. Type Checking
+    1. Definition + (Examples)
+    2. Real World Use Cases
+    3. ```isinstance, issubclass, type, isinstance, type, __class__```
+    4. ```typing```
+    5. ```pydantic```
+
+16. Duck Typing
+    1. Definition + (Examples)
+    2. Real World Use Cases
+
+17. SOLID
+    1. Definition + (Examples)
+    2. Real World Use Cases
+    3. Single Responsibility Principle
+    4. Open-Closed Principle
+    5. Liskov Substitution Principle
+    6. Interface Segregation Principle
+    7. Dependency Inversion Principle
+
+18. Design Patterns
+    1. Definition + (Examples)
+    2. Creational Patterns
+        1. Singleton
+        2. Factory
+        3. Abstract Factory
+        4. Builder
+        5. Prototype
+    3. Structural Patterns
+        1. Adapter
+        2. Bridge
+        3. Composite
+        4. Decorator
+        5. Facade
+        6. Flyweight
+        7. Proxy
+    4. Behavioral Patterns
+        1. Chain of Responsibility
+        2. Command
+        3. Interpreter
+        4. Iterator
+        5. Mediator
+        6. Memento
+        7. Observer
+        8. State
+        9. Strategy
+        10. Template Method
+        11. Visitor
+
+
+19. Design Principles
+20. A lot of practical stuff
+
 
 # OOP
 
@@ -82,19 +213,20 @@ _As soon as we define a class, a new class object is created with the same name.
 the different attributes as well as to instantiate new objects of that class._
 
 + Example:
+
 ```python
 # parent class
 class Person(object):
- 
+
     # __init__ is known as the constructor
     def __init__(self, name, idnumber):
         self.name = name
         self.idnumber = idnumber
- 
+
     def display(self):
         print(self.name)
         print(self.idnumber)
-         
+
     def details(self):
         print("My name is {}".format(self.name))
         print("IdNumber: {}".format(self.idnumber))
@@ -125,24 +257,25 @@ print(Person.__doc__)
 
 _the class object could be used to access different attributes._
 _It can also be used to create new object instances (instantiation) of that class._
+
 ```python
 class Employee():
     def __init__(self, name, idnumber, salary, post):
-        self.name=name
-        self.name=idnumber
+        self.name = name
+        self.name = idnumber
         self.salary = salary
         self.post = post
 
-         
     def details(self):
         print("My name is {}".format(self.name))
         print("IdNumber: {}".format(self.idnumber))
         print("Post: {}".format(self.post))
- 
- 
+
+
 # creation of an object variable or an instance
 a = Employee('Rahul', 886012, 200000, "Intern")
 ```
+
 + Example:
 
 ```python
@@ -269,11 +402,15 @@ class FulltimeEmployee(Employee):
     def get_salary(self):
         return self.salary
 ```
+
 ### Protocols
-_A class object is considered an implementation of a protocol if accessing all members on it results in types compatible with the protocol members.
+
+_A class object is considered an implementation of a protocol if accessing all members on it results in types compatible
+with the protocol members.
 All things protocol related resides in typing library in Protocol class:_
 
 + Example:
+
 ```python
 from typing import Protocol
 
@@ -303,54 +440,71 @@ email.body = 'I survived the storm. I am alone on Mars.'
 send(email)  # will pass the checker
 
 ```
+
 + Email is explicit subclass of the protocol
 
 _If a class includes a protocol in its MRO, the class is called an explicit subclass of the protocol._
+
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # Interface
-_An interface acts as a template for designing classes. Interfaces also define methods the same as classes, but abstract methods, whereas class contains nonabstract methods._
 
-_Python interface is also a class that defines methods that can be overridden but without force enforcement. An interface also called Protocols or Duck Typing._
-_The duck typing is actually we execute a method on the object as we expected an object to have, instead of checking the type of an object._
-_If it`s the same as we expected, then we will be fine and go farther, else if it does not, things might get wrong, and for safety, we use a try..except block to handle the exceptions to check the object have the particular method or not._
+_An interface acts as a template for designing classes. Interfaces also define methods the same as classes, but abstract
+methods, whereas class contains nonabstract methods._
 
-_As in the example code, class Fruits implement the __len__, and __contains__ methods, so on the instance of the Fruits class, we can directly use the len function to get the size and can check the membership by using the in operator._
+_Python interface is also a class that defines methods that can be overridden but without force enforcement. An
+interface also called Protocols or Duck Typing._
+_The duck typing is actually we execute a method on the object as we expected an object to have, instead of checking the
+type of an object._
+_If it`s the same as we expected, then we will be fine and go farther, else if it does not, things might get wrong, and
+for safety, we use a try..except block to handle the exceptions to check the object have the particular method or not._
+
+_As in the example code, class Fruits implement the __len__, and __contains__ methods, so on the instance of the Fruits
+class, we can directly use the len function to get the size and can check the membership by using the in operator._
 
 + Example:
+
 ```python
-class Fruits :
-    def __init__( self, ele) :
+class Fruits:
+    def __init__(self, ele):
         self.__ele = ele
-    def __contains__( self, ele) :
+
+    def __contains__(self, ele):
         return ele in self.__ele
-    def __len__( self ):
-        return len( self.__ele)
-Fruits_list = Fruits([ "Apple", "Banana", "Orange" ])
+
+    def __len__(self):
+        return len(self.__ele)
+
+
+Fruits_list = Fruits(["Apple", "Banana", "Orange"])
 print(len(Fruits_list))
 print("Apple" in Fruits_list)
 print("Mango" in Fruits_list)
 print("Orange" not in Fruits_list)
 ```
 
-_The make_user, get_age, is_adult functions are the User abstraction interface. They are used by external (user, caller) code._
+_The make_user, get_age, is_adult functions are the User abstraction interface. They are used by external (user, caller)
+code._
+
 + Example:
+
 ```python
 def make_user(name, birthday):
     return {
-    "name": name,
-    "birthday": birthday,
+        "name": name,
+        "birthday": birthday,
     }
+
 
 def get_age(user):
     return calculate_age(user["birthday"])
+
 
 def is_adult(user):
     return get_age(user) >= 18
 
 
 ```
-
 
 # "Polymorphism"
 
@@ -388,7 +542,9 @@ class Animal:
 ```
 
 ### Polymorphism With Class Methods
+
 + Example:
+
 ```python
 class Car():
 
@@ -423,7 +579,9 @@ for vehicle in (obj_car, obj_bus):
 _a child class gets access to the protected and public methods
 and variables of the parent class whenever it inherits it. We exploit
 this concept to implement Polymorphism using Inheritance as well._
+
 + Example:
+
 ```python 
 class Vehicle:
 
@@ -904,8 +1062,11 @@ Called when math.trunc(self) is called. __trunc__ should return the value of `se
 __coerce__(self, other)
 Method to implement mixed mode arithmetic. __coerce__ should return None if type conversion is impossible. Otherwise, it should return a pair (2-tuple) of self and other, manipulated to have the same type.
 ```
+
 ### Controlling Attribute Access
-_Python accomplishes a great deal of encapsulation through "magic", instead of explicit modifiers for methods or fields._
+
+_Python accomplishes a great deal of encapsulation through "magic", instead of explicit modifiers for methods or
+fields._
 
 ```
 __getattr__(self, name)
@@ -923,6 +1084,7 @@ def __setattr__(self, name, value):
     # since every time an attribute is assigned, __setattr__() is called, this
     # is recursion.
 ```
+
 # Encapsulation - Public, Protected, Private
 
 ## Public
@@ -981,11 +1143,16 @@ class Student:
     def __display(self):  # private method
         print('This is private method.')
 ```
+
 # Enumeration
-_By definition, an enumeration is a set of members that have associated unique constant values. Enumeration is often called enum._
-_Python provides you with the enum module that contains the Enum type for defining new enumerations. And you define a new enumeration type by subclassing the Enum class._
+
+_By definition, an enumeration is a set of members that have associated unique constant values. Enumeration is often
+called enum._
+_Python provides you with the enum module that contains the Enum type for defining new enumerations. And you define a
+new enumeration type by subclassing the Enum class._
 
 + Example:
+
 ```python
 from enum import Enum
 
@@ -999,12 +1166,15 @@ class Color(Enum):
     VIOLET = "VIOLET"
 
 
-print(dir(Color))       # ['BLUE', 'GREEN', 'ORANGE', 'RED', 'VIOLET', 'YELLOW', '__class__', '__doc__', '__members__', '__module__']
-print(Color.RED)        # Color.RED
+print(
+    dir(Color))  # ['BLUE', 'GREEN', 'ORANGE', 'RED', 'VIOLET', 'YELLOW', '__class__', '__doc__', '__members__', '__module__']
+print(Color.RED)  # Color.RED
 print(Color.RED.name)
 print(Color.RED.value)
 ```
+
 + Example:
+
 ```python
 class Delivery(Enum):
     COURIER = 1
@@ -1026,14 +1196,18 @@ class Order:
 
 print(Color['RED'])
 ```
+
 1. First, import the Enum type from the enum module:
 2. Second, define the Color class that inherits from the Enum type:
 3. Third, define the members of the Color enumeration:
-+ In this example, the Color is an enumeration. The RED, GREEN, and BLUE are members of the Color enumeration. They have associated values 1, 2, and 3.
 
++ In this example, the Color is an enumeration. The RED, GREEN, and BLUE are members of the Color enumeration. They have
+  associated values 1, 2, and 3.
 
 # Deligation
+
 __
+
 # ++++++++++++++++++++++
 
 ```python
@@ -1095,35 +1269,37 @@ class my_class:
 | Class method can access and modify the class state. | Static Method cannot access or modify the class state. |
 | The class method takes the class as parameter to know about the state of that class. | Static methods do not know about class state. These methods are used to do some utility tasks by taking some parameters. |
 | @classmethod decorator is used here. | @staticmethod decorator is used here. |
+
 ```python
 from datetime import date
- 
- 
+
+
 class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
- 
+
     # a class method to create a Person object by birth year.
     @classmethod
     def fromBirthYear(cls, name, year):
         return cls(name, date.today().year - year)
- 
+
     # a static method to check if a Person is adult or not.
     @staticmethod
     def isAdult(age):
         return age > 18
- 
- 
+
+
 person1 = Person('mayank', 21)
 person2 = Person.fromBirthYear('mayank', 1996)
- 
+
 print(person1.age)
 print(person2.age)
- 
+
 # print the result
 print(Person.isAdult(22))
 ```
+
 # Getter and Setter
 
 _In Python, getters and setters are not the same as those in other
