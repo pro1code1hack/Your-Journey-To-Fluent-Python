@@ -130,69 +130,108 @@ print(s * 5)        # HiHiHiHiHi
 ```
 ## Strings methods
 The most popular string methods
-### str.capitalize()
+### str.capitalize() --> Converts the first character to upper case
 ```python
+test_0 = 'hello WoRLd'
+test_1 = "HI EHOR"
 print(test_0.capitalize())      # Hello world
 print(test_1.capitalize())      # Hi ehor
 ```
-# count()    Returns the number of times a specified value occurs in a string
+### str.count() -->  Returns the number of times a specified value occurs in a string
+```python
 print(test_0.count("o"))        # 2
 print(test_1.count("h"))        # 0
-# endswith()    Returns true if the string ends with the specified value
+```
+### str.endswith() --> Returns true if the string ends with the specified value
+```python
 print("I am Vlad".endswith("d"))        # True
-print(test_1.endswith("r"))             # False       
-# find()    Searches the string  and returns the position of where it was found
+print(test_1.endswith("r"))             # False
+```
+### str.find()  -->  Searches the string  and returns the position of where it was found
+```python
 print("Oh,shit".find("h"))      # 1
 print("Im sorry".find("y"))     # 7
-# isalnum()    Returns True if all characters in the string are alphanumeric
+```
+### str.isalnum() -->    Returns True if all characters in the string are alphanumeric
+```python
 s = "13bruh3801"
 print(s.isalnum())      # True
 print("!@#$#%$#*".isalnum())        # False
-# isalpha()    Returns True if all characters in the string are in the alphabet
+```
+### str.isalpha() -->    Returns True if all characters in the string are in the alphabet
+```python
 print("Yes".isalpha())          # True
 print("Yes123".isalpha())       # False
-# isdigit()    Returns True if all characters in the string are digits
+```
+### str.isdigit() -->    Returns True if all characters in the string are digits
+```python
 print("$1290".isdigit())        # False
 print("106".isdigit())          # True
-# islower()    Returns True if all characters in the string are lower case
+```
+### str.islower()  -->   Returns True if all characters in the string are lower case
+```python
 print("hello world".islower())      # True
 print("Hello World".islower())      # False
-# isupper()    Returns True if all characters in the string are upper case
+```
+### str.isupper() -->    Returns True if all characters in the string are upper case
+```python
 print("HELLO EVERYBODY".isupper())      # True
 print("FDSNSLAVESJKs".isupper())        # False
-# join()    Converts the elements of an iterable into a string
+```
+### str.join() -->   Converts the elements of an iterable into a string
+```python
 List = ["Three","Hundred","Bucks"]
 print("$".join(List))           # Three$Hundred$Bucks
 print("0".join("1"*8))          # 101010101010101
-# lower()    Converts a string into lower case
+```
+### str.lower() -->   Converts a string into lower case
+```python
 print("VLAD".lower())       # vlad
 print(test_0.lower())       # hello world
-# upper()    Converts a string into upper case
+```
+### str.upper() -->   Converts a string into upper case
+```python
 print("just do it".upper())         # JUST DO IT
 print("yes sir".upper())            # YES SIR
-# lstrip()    Returns a left trim version of the string
+```
+### str.lstrip() -->   Returns a left trim version of the string
+```python
 print("    Lets go".lstrip())         # Lets go
 print("    danger!".lstrip())        # danger!
-# replace()    Returns a string where a  value is replaced with a specified value 
+```
+### str.replace() -->   Returns a string where a  value is replaced with a specified value 
+```python
 breakfast =  "My breakfast is  apple"
 print(breakfast.replace("apple","burger"))      # My breakfast is  burger
 print(breakfast.replace("My","Your"))           # Your breakfast is  apple
-# rstrip()    Returns a right trim version of the string
+```
+### str.rstrip()  -->  Returns a right trim version of the string
+```python
 print("I like it    ".rstrip())         # I like it
 print('Python   '.rstrip())             # Python
-# split()    Splits the string at the specified separator, and returns a list
+```
+### str.split() -->   Splits the string at the specified separator, and returns a list
+```python
 print("Python,Java,C,Assembler".split(","))  # ['Python', 'Java', 'C', 'Assembler']
 print("1!2!3!4!5!".split("!"))          # ['1', '2', '3', '4', '5', '']
-# startswith()	Returns true if the string starts with the specified value
+```
+### str.startswith() -->	Returns true if the string starts with the specified value
+```python
 print("I like Python".startswith("I"))          # True  
 print("I like Python".startswith("You"))        # False
-# strip()    Returns a trimmed version of the string
+```
+### str.strip() -->   Returns a trimmed version of the string
+```python
 print("    !King James!    ".strip())       # !King James!
 print("    !MJ Goat!   ".strip())           # !MJ Goat!
-# swapcase()    Swaps cases, lower case becomes upper case and vice versa
+```
+### str.swapcase() -->   Swaps cases, lower case becomes upper case and vice versa
+```python
 print("HI python".swapcase())           # hi PYTHON
 print("wHO aRE yOU?".swapcase())        # Who Are You?
-# title()    Converts the first character of each word to upper case
+```
+### str.title() -->    Converts the first character of each word to upper case
+```python
 print("i want pizza".title())           # I Want Pizza
 print("apple banana cherry".title())    # Apple Banana Cherry  
 ```
@@ -236,53 +275,75 @@ numbers = [i for i in range(10)]
 squares = [i ** 2 for i in range(10)]
 lines = [input() for _ in range(int(input()))]
 ```
-### List Methods
+## List Methods
+
+### list.append()  -->  Adds an element at the end of the list
 ```python
-#append()    Adds an element at the end of the list
 list_0 = [1,2,3,4]
 list_0.append(12)
 print(list)     # [1, 2, 3, 4, 12] 
 list_0.append([10,78])
 print(list)     # [1, 2, 3, 4, 12, [10, 78]]
-#clear()    Removes all the elements from the list
+```
+### list.clear() -->   Removes all the elements from the list
+```python
 list_1  = [65,76,87,98,12]
 list_1.clear()
 print(list)         # <class 'list'>
-#copy()    Returns a copy of the list
+```
+### list.copy()  -->  Returns a copy of the list
+```python
 list1 = [1,2,3,4,5,"Yes"]
 list2 = list1.copy()
 print(list2)        # [1, 2, 3, 4, 5, 'Yes']      
 print(list2 == list1)       # True
-#count()    Returns the number of elements with the specified value
+```
+### list.count()  -->  Returns the number of elements with the specified value
+```python
 test_count = [1,1,8,"bio",4,1]
 print(test_count.count(1))      # 3
-#extend()    Add the elements of a list (or any iterable), to the end of the current list
+```
+### list.extend() -->   Add the elements of a list (or any iterable), to the end of the current list
+```python
 test_count.extend([45,1,78])    
 print(test_count)           # [1, 1, 8, 'bio', 4, 1, 45, 1, 78]
 test_count.extend("Hello")
 print(test_count)           # [1, 1, 8, 'bio', 4, 1, 45, 1, 78, 'H', 'e', 'l', 'l', 'o']
-#index()    Returns the index of the first element with the specified value
-print([23,65,43,2].index(2))        # 3
-#insert()    Adds an element at the specified position
+```
+### list.index()  -->  Returns the index of the first element with the specified value
+```python
+print([23,65,43,5].index(5)) # 3
+```
+### list.insert()  -->  Adds an element at the specified position
+```python
 test = ["pizza","burger","coke"]
 test.insert(1,"sprite")
 print(test)         #['pizza', 'sprite', 'burger', 'coke']
-#pop()    Removes the element at the specified position
+```
+### list.pop() -->   Removes the element at the specified position
+```python
 test.pop(2)
 print(test)     # ['pizza', 'sprite', 'coke']
 test.pop()
 print(test)     # ['pizza', 'sprite']
-#remove()    Removes the first item with the specified value
-l = [16,98,56,4]
-l.remove(98)
-print(l)        # [16, 56, 4]
-#reverse()    Reverses the order of the list
-l.reverse()
-print(l)        # [4, 56, 16]
-#sort()    Sorts the list
-l.sort()
-print(l)        # [4, 16, 56]
 ```
+### list.remove()  -->  Removes the first item with the specified value
+```python
+L = [16,98,56,4]
+L.remove(98)
+print(L)        # [16, 56, 4]
+```
+### list.reverse()  -->  Reverses the order of the list
+```python
+L.reverse()
+print(L)        # [4, 56, 16]
+```
+### list.sort()  -->  Sorts the list
+```python
+L.sort()
+print(L)        # [4, 16, 56]
+```
+
 ## Tuple
 Tuples are used to store multiple items in a single variable.
 A tuple is a collection which is ordered and *unchangeable*.
@@ -310,12 +371,14 @@ print(sum(num_tuple))    # 117
 print(num_tuple * 2)     # [12, 21, 78, 12, 21, 78]
 ```
 ### Tuple methods
+### tuple.count() -->	Returns the number of times a specified value occurs in a tuple
 ```python
-#count()	Returns the number of times a specified value occurs in a tuple
 thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
 x = thistuple.count(5)
-print(x)        # 2        
-#index()	Searches the tuple for a specified value and returns the position of where it was found
+print(x)        # 2   
+```
+### tuple.index() -->	Searches the tuple for a specified value and returns the position of where it was found
+```python
 test_tuple = (1,3,6,8,1,2)
 print(test_tuple.index(3))      # 1
 ```
@@ -360,15 +423,17 @@ test_dict = {
 }
 ```
 ### Dict methods
+### dict.clear() --> Remove all the elements from the dictionary
 ```python
-#clear()  Remove all the elements from the dictionary
 dict = {
     "one" : 1,
     "two " : 2,
     "three" : 3
 }
 print(dict.clear())     # None
-#copy()  Returns a copy of the dictionary
+```
+### dict.copy() --> Returns a copy of the dictionary
+```python
 dict_0 = {
     "one" : 1,
     "two " : 2,
@@ -376,7 +441,9 @@ dict_0 = {
 }
 dict1 = dict_0.copy()
 print(dict1)        # {'one': 1, 'two ': 2, 'three': 3}
-#get()  Returns the value of specified key
+```
+### dict.get() --> Returns the value of specified key
+```python
 test_dict = {
     "Math" : 87,
     "English" : 68,
@@ -384,24 +451,36 @@ test_dict = {
     "Physics" : 91
 }
 print(test_dict.get("Math"))        # 87
-#items()  Returns a list containing a tuple for each key value pair
+```
+### dict.items() --> Returns a list containing a tuple for each key value pair
+```python
 print(test_dict.items())            # dict_items([('Math', 87), ('English', 68), ('Chemistry', 55), ('Physics', 91)])
-#keys()  Returns a list containing dictionary’s keys
+```
+### dict.keys() --> Returns a list containing dictionary’s keys
+```python
 print(test_dict.keys())         # dict_keys(['Math', 'English', 'Chemistry', 'Physics'])
-#pop()  Remove the element with specified key
+```
+### dict.pop() --> Remove the element with specified key
+```python
 test_dict.pop("Chemistry")
 print(test_dict)            #{'Math': 87, 'English': 68, 'Physics': 91}
-#popitem()  Removes the last inserted key-value pair
+```
+### dict.popitem() --> Removes the last inserted key-value pair
+```python
 item = test_dict.popitem()
 print(test_dict)        # {'Math': 87, 'English': 68}
 print(item)             #('Physics', 91)
-#update()  Updates dictionary with specified key-value pairs
+```
+### dict.update() --> Updates dictionary with specified key-value pairs
+```python
 test_dict.update({item})
 print(test_dict)        # {'Math': 87, 'English': 68, 'Physics': 91}
-#values()  Returns a list of all the values of dictionary
-print(test_dict.values())       # dict_values([87, 68, 91])
-
 ```
+### dict.values() --> Returns a list of all the values of dictionary
+```python
+print(test_dict.values())       # dict_values([87, 68, 91])
+```
+
 ## Set
 Sets are used to store multiple items in a single variable.
 Set is one of 4 built-in data types in Python used to store collections of data,
@@ -417,24 +496,101 @@ test_set = {"name","height","weight","name"}
 print(test_set)     # {'name', 'height', 'weight'}
 ```
 ### Set methods
+### set.add() -->	Adds a given element to a set
 ```python
-#add()	Adds a given element to a set
-#clear()	Removes all elements from the set
-#copy()	Returns a shallow copy of the set
-#difference()	Returns a set that is the difference between two sets
-#difference_update()	Updates the existing caller set with the difference between two sets
-#discard()	Removes the element from the set
-#frozenset()	Return an immutable frozenset object
-#intersection()	Returns a set that has the intersection of all sets
-#intersection_update()	Updates the existing caller set with the intersection of sets
-#isdisjoint()	Checks whether the sets are disjoint or not
-#issubset()	Returns True if all elements of a set A are present in another set B
-#issuperset()	Returns True if all elements of a set A occupies set B
-#pop()	Returns and removes a random element from the set
-#remove()	Removes the element from the set
-#union()	Returns a set that has the union of all sets
-#update()	Adds elements to the set
+set = {12,45,90}
+set.add(19)
+print(set)      # {90, 19, 12, 45}
 ```
+### set.clear() -->	Removes all elements from the set
+```python
+test_set = {9,99,999}
+test_set.clear()
+print(test_set)     # set()
+```
+### set.copy() -->	Returns a shallow copy of the set
+```python
+test_set = {9,99,999}
+test_set_1 = test_set.copy()
+print(test_set_1)       # {9, 99, 999}
+```
+### set.difference() -->	Returns a set that is the difference between two sets
+```python
+set_1 ={1,3,7,16,45}
+set_2 ={7,3,45}
+print(set_1.difference(set_2))      # {16,1}
+```
+### set.discard() -->	Removes the element from the set
+```python
+set_1 ={1,3,7,16,45}
+set_1.discard(45)
+print(set_1)        # {16, 1, 3, 7}
+```
+### set.frozenset() -->	Return an immutable frozenset object
+```python
+test_set = frozenset("apple")
+print(test_set)     # frozenset({'l', 'e', 'a', 'p'})
+```
+### set.intersection() -->	Returns a set that has the intersection of all sets
+```python
+set_1 = {"meat","potatoes","juice","chocolate"}
+set_2 ={"fish","potatoes","cola","juice"}
+print(set_1.intersection(set_2))        # {'juice', 'potatoes'}
+print(set_1)        # {'meat', 'potatoes', 'chocolate', 'juice'}
+```
+### set.intersection_update() -->	Updates the existing caller set with the intersection of sets
+```python
+set_1 = {"meat","potatoes","juice","chocolate"}
+set_2 ={"fish","potatoes","cola","juice"}
+set_1.intersection_update(set_2)
+print(set_1)        # {'potatoes', 'juice'}
+```
+### set.isdisjoint() -->	Checks whether the sets are disjoint or not
+```python
+my_set = {11, 27, "Yes"}
+print(my_set.isdisjoint(['2', 10, 18]))     # True
+print(my_set.isdisjoint([2, 11, 18]))       # False
+```
+### set.issubset() -->	Returns True if all elements of a set A are present in another set B
+```python
+set_1 = {5,10,15}
+print(set_1.issubset([5,10]))       # False
+print(set_1.issubset([5,10,15]))    # True
+print(set_1.issubset([5,10,15,20])) # True
+```
+### set.issuperset() -->	Returns True if all elements of a set A occupies set B
+```python
+set_1 = {5,10,15}
+print(set_1.issubset([5,10]))       # True
+print(set_1.issubset([5,10,15]))    # True
+print(set_1.issubset([5,10,15,20])) # False
+```
+### set.pop() -->	Returns and removes a random element from the set
+```python
+test_set = {11,26,39,4}
+print(test_set.pop())       # 26
+print(test_set)             # {11, 4, 39}
+```
+### set.remove() -->	Removes the element from the set
+```python
+fruit_set = {"apple","orange","banana","cucumber"}
+fruit_set.remove("cucumber")
+print(fruit_set)        # {'apple', 'banana', 'orange'}
+```
+### set.union()   -->	Returns a set that has the union of all sets
+```python
+test_set_1 = {1,2,3,4}
+test_set_2 = {4,5,6,7}
+test_set_3 = test_set_1.union(test_set_2)
+print(test_set_3)       # {1, 2, 3, 4, 5, 6, 7}
+```
+### set.update()  -->	Adds elements to the set
+```python
+set = {"milk",89,True,10}
+set.update([12,56,"juice"])
+print(set)          # {True, 'juice', 10, 12, 'milk', 56, 89}
+```
+
 ## Boolean Type
 Python boolean type is one of the built-in data types provided by Python, which represents one of the two values i.e. 
 True or False. Generally, it is used to represent the truth values of the expressions. For example, 1==1 is True whereas 2<1 is False.
