@@ -70,6 +70,7 @@ runs._
 The raising instruction is supposed to raise the specified exception. If no exceptions are found in the observable
 scope, then a RuntimeError exception is thrown at the place where the promotion is specified, without specifying,
 indicating that this is an error.
+
 ![alt text](../Images/Raise.png)
 
 #### Example 1
