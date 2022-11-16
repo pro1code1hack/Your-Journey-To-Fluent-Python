@@ -1,4 +1,4 @@
-1. Intro to Functions 
+gt1. Intro to Functions 
 2. Real World Examples
 3. Concepts of functional programming 
 4. Functions definition 
