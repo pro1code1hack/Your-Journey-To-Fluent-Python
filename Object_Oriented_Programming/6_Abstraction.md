@@ -25,7 +25,6 @@ from abc import ABC, abstractmethod
 class AbstractClass(ABC):
     @abstractmethod
     def abstract_method(self):
-
         Pass
 ```
 
@@ -96,11 +95,11 @@ triangle.draw()
 
 # Difference between abstract class and interface
 
-| Interface                                                                                                                 | Abstract class                                                          |
-|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Interface                                                                                                                  | Abstract class                                                           |
+|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | There can only be abstract methods on an interface. Since Java 8, it is also capable of having static and default methods. | Both abstract and non-abstract methods can be found in abstract classes. |
-| Multiple inheritance is supported via interface.                                                                          | Multiple inheritance is not supported by abstract classes.              |
-| The interface class comes with its own fields and logic                           | The abstract class is just a template                                   |
+| Multiple inheritance is supported via interface.                                                                           | Multiple inheritance is not supported by abstract classes.               |
+| The interface class comes with its own fields and logic                                                                    | The abstract class is just a template                                    |
 
 # Abstract Methods
 
@@ -157,11 +156,57 @@ _Similar to Go, this capability enables you to create interfaces and verify that
 This is what is known as static duck typing._
 
 ```python
+def foo1():
+    print("foo1")
 
+
+def foo2():
+    print("foo2")
+
+
+d = {"foo1": foo1,
+     "foo2": foo2
+     }
+
+d["foo1"]()  # foo1
+d["foo2"]()  # foo2
 ```
+
+# Implementation through Subclassing
+
+_As the name suggests, a subclass (or derived class) extends the base class; you use the parent class as a template and
+add additional information to create a new template._
+
+_Directly deriving from the base allows us to avoid explicitly registering the class.In this instance,
+PluginImplementation is identified as implementing the abstract PluginBase using the Python class management._
+
+```python
+class SuperHero():  # superclass, inherits from default object
+    def getName(self):
+        raise NotImplementedError  # you want to override this on the child classes
+
+
+class SuperMan(SuperHero):  # subclass, inherits from SuperHero
+    def getName(self):
+        return "Clark Kent"
+
+
+class SuperManII(SuperHero):  # another subclass
+    def getName(self):
+        return "Clark Kent, Jr."
+
+
+sm = SuperMan()
+print(sm.getName())
+sm2 = SuperManII()
+print(sm2.getName())
+```
+
+_Additionally, you may create as many subclasses as you like by reusing the parent class_
+
 
 # Problems:
 
-3. Abstract Instances / Invoke Methods from Abstract Class
-    4. Implementation through Subclassing
-    5. Protocol and Duck Typing
+Abstract Instances / Invoke Methods from Abstract Class
+
+there is no such thing in python, so what I have to describe
