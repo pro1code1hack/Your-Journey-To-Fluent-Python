@@ -1,0 +1,114 @@
+# OOP
+
+_Object Oriented Programming is considered as a design
+for building software. In OOP every logic is written to get
+our work done, but represented in form of Objects._
+
+_The basic goal of OOPs concepts with real time examples is to
+connect data and the functions that operate on it so that no other
+part of the code may access it except that function._
+
+### Why classes?
+
++ You need to keep state
+
+_For example, if you need to manage a bunch of students and grades, or when you build a game that keeps track of
+attempts, score, etc_
+
++ Bigger projects – classes favor code organization and reusability
+
+_This becomes specially powerful if you have hundreds of subclasses and you need to make a fundamental change. You can
+make a single change in the base class (parent) and all child classes pick up the change (keeping things DRY)._
+
+_Overall, Classes are a way to organize your code into generic, reusable peices. At their best they are generic
+blueprints for things that will be used over and over again with little modification._
+
+# Concept of OOP
+
+_Main Concepts of Object-Oriented Programming:_
+
++ Class
++ Objects
++ Methods
++ Inheritance
++ Encapsulation
++ Polymorphism
+
+### Class
+
+_Instead of writing a program, you create classes with OOP.
+Data and functions are both contained in a class. You construct an object
+, which is an instance of that class, when you want to save something in memory.
+As an example, you can create a Customer class that contains customer-related data
+and functions. You must then build a new Customer class object if you want
+your program to generate a customer in memory._
+
+_Consider the Automobile Class. There may be many automobiles with different
+names and brands, but they will all have some basic characteristics, such as
+four wheels, a speed limit, and a range of mileage. The class is Car, and the
+attributes are wheels, speed limitations, and mileage._
+
++ Example:
+
+```python
+class Animals:
+    '''This is a docstring. I have created a new class'''
+    pass
+```
+
+### Objects
+
+_Object is the basic unit of object-oriented programming.Objects are identified
+by its unique name. An objectrepresents a particular instance of a class. There
+can be more than one instance of an object. Each instance of an object can hold
+its own relevant data._
+
++ Example:
+
+```python
+obj = Animals()
+```
+
+_A class creates a local namespace where all its attributes are defined. Attributes may be data or functions._
+_As soon as we define a class, a new class object is created with the same name. This class object allows to access
+the different attributes as well as to instantiate new objects of that class._
+
+### Methods
+
+_Methods are functions defined inside the body of a class. They are used to define the behaviors of an object._
+
++ Example:
+
+```python
+class Animals:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name}({self.age})"
+
+
+# instantiate the object
+dog = Animals("Rex", 8)
+
+# call our instance methods
+print(dog)
+```
+
+### Self
+
+_self represents the instance of the class. By using the “self” we can access the attributes and methods of the class in
+python. It binds the attributes with the given arguments._
+
+### Comparison with Functional Programming
+
+| Functional Programming                                                                                                                                                                                                     | OOP                                                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Follows a more declarative programming model.                                                                                                                                                                              | Mainly follows an imperative programming approach.                                                                                         |
+| Functional programming writes pure functions. Pure functions only produce outputs with identical inputs. Consequently, functional programming is extremely operational, practical, and, as the name indicates, functional. | OOP is not as operational as Functional programming. In fact, OOP stores data in objects, and the data is prioritized over the operations. |
+| Functional programming uses immutable data                                                                                                                                                                                 | Object oriendet uses the mutable data                                                                                                      |
+| Functional programming follow declarative programming model                                                                                                                                                                | OOP follow imperative programming model                                                                                                    |
+| In Functional programming, the statements can be executed in any order                                                                                                                                                     | In OOP, the statementss should be executed in particular order                                                                             |
+| In Functional programming, recursion is used for iterarive data                                                                                                                                                            | In OOP, loops are used for iterative data                                                                                                  |
+| The basic elements of functional prigramming are Variables and Functions                                                                                                                                                   | The basic elements of OOP are objects and methods                                                                                          |
