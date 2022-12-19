@@ -1,0 +1,38 @@
+## Tuple
+Tuples are used to store multiple items in a single variable.
+A tuple is a collection which is ordered and *unchangeable*.
+Tuples are written with round brackets
+```python
+the_tuple = (21,90,"programming",True)
+print(the_tuple)        # (21, 90, 'programming', True)
+```
+#### Tuple items are ordered, allow duplicate values but unchangeable:
+```python
+test_tuple  = (21,90,"programming",True,["apple","fruit"])
+print(test_tuple[2])        # programming
+print(test_tuple[-1][0])        # apple
+test_tuple[2] = 18      #'tuple' object does not support item assignment
+test_tuple[-1][1] = "vegetable"
+print(test_tuple)       #(21, 90, 'programming', True, ['apple', 'vegetable'])
+```
+#### In tuple basic functions, like in list
+```python
+num_tuple = [15,24,78]
+print(len(num_tuple))    # 3
+print(max(num_tuple))    # 78
+print(min(num_tuple))    # 15
+print(sum(num_tuple))    # 117
+print(num_tuple * 2)     # [12, 21, 78, 12, 21, 78]
+```
+### Tuple methods
+### tuple.count() -->	Returns the number of times a specified value occurs in a tuple
+```python
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.count(5)
+print(x)        # 2   
+```
+### tuple.index() -->	Searches the tuple for a specified value and returns the position of where it was found
+```python
+test_tuple = (1,3,6,8,1,2)
+print(test_tuple.index(3))      # 1
+```

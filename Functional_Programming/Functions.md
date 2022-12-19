@@ -1,3 +1,25 @@
+gt1. Intro to Functions 
+2. Real World Examples
+3. Concepts of functional programming 
+4. Functions definition 
+5. Functions with return values 
+6. Variable number of arguments, Default arguments and Named arguments 
+7. Optional arguments (args*, **kwargs)
+8. Higher-order functions
+9. Closures 
+10. Global, local, nonlocal and builtin functions 
+11. Decorators 
+12. Anonymous functions
+13. Function pointers
+14. Function composition
+15. Function currying
+16. Function memoization
+17. Partial functions 
+18. Function overloading
+19. Recursion
+20. Function annotations
+21. Design of the program  
+
 # Functions
 
 Functions are "self-contained" modules of code that accomplish a specific 

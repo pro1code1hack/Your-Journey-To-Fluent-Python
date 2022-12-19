@@ -6,10 +6,10 @@
 4. Assignment Operator ( = ) + print/input
 5. Arithmetic Operator (+,-,*,/,//,%,**)
 6. Relational Operator (>/< /<= />= /== /!=)
-7. Loops (for/while)
-8. Logical Operators (and or not)
-9. Conditional Operator (if/elif/else)
-10. Data types and Operators (Numbers, Strings, Lists, Tuples, Dictionaries, Sets, Booleans) + Mutable/Immutable
+7. Logical Operators (and or not)
+8. Conditional Operator (if/elif/else)
+9. Loops (for/while) 
+10. Data types/structures (Numbers, Strings, Lists, Tuples, Dictionaries, Sets, Booleans) + Mutable/Immutable
     classification
 11. Writing comments (https://realpython.com/python-comments-guide/)
 12. PyCharm Guide(https://realpython.com/pycharm-guide/#debugging-in-pycharm)
