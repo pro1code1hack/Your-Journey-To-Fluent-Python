@@ -43,7 +43,7 @@ ZeroDivisionError: division by zero
 
 ZeroDivisionError occurs when you try to divide something by zero
 
-### TypeError Example
+
 ```python
 print('string' / 25)
 ```
@@ -63,6 +63,7 @@ https://docs.python.org/3/library/exceptions.html
 
 Definition: _Exception handling is the process of responding to unwanted or unexpected events when a computer program
 runs._
+
 ## Exception hierarhy
 
 An important thing to know is that exceptions, like everything else in Python, are just objects. They follow an
@@ -82,7 +83,6 @@ https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 - - - - OverflowError
 - - - - ZeroDivisionError
 - - - AssertionError
-
 
 
 ## Types of exceptions Handling
@@ -185,7 +185,9 @@ The try and except block in Python is used to catch and handle exceptions. Pytho
 statement as a “normal” part of the program. The code that follows the except statement is the program’s response to any
 exceptions in the preceding try clause.
 
-![img](../Images/TryExcept.png)
+
+![img](../Images/ExceptionsTryExcept.png)
+
 
 As you saw earlier, when syntactically correct code runs into an error, Python will throw an exception error. This
 exception error will crash the program if it is unhandled. The except clause determines how your program responds to
@@ -398,6 +400,27 @@ Since ExceptionGroup is a subclass of Exception, you can interact with it using 
 Although you generally won't do it very often unless you're developing some low-level library, raise allows you to raise
 an ExceptionGroup. Additionally, you can use except ExceptionGroup to catch an ExceptionGroup.
 
+## Exception hierarhy
+
+An important thing to know is that exceptions, like everything else in Python, are just objects. They follow an
+inheritance hierarchy, just like classes do. For example, the ZeroDivisionError is a subclass of ArithmeticError, which
+is a subclass of Exception, itself a subclass of BaseException.
+
+So, if you wanted to catch a divide-by-zero error, you could use except ZeroDivisionError. But you could also use except
+ArithmeticError, which would catch not only ZeroDivisionEror, but also OverflowError and FloatingPointError. Here`s
+short hierarchy of exceptions 
+(full hierarchy you can find in python documentation
+https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+
+- BaseException
+- - Exception
+- - - ArithmeticError
+- - - - FloatingPointError
+- - - - OverflowError
+- - - - ZeroDivisionError
+- - - AssertionError
+
+
 
 ## Good tone
 
@@ -414,6 +437,7 @@ that strangely fail.
 
 Catching a BaseException is awful idea because you will swallow all types of exceptions, including KeyboardInterrupt,
 the exception that causes your program to terminate when SIGINT (Ctrl-C) is sent. Do not do that.
+
 
 ### Don`t use Assert in production
 
