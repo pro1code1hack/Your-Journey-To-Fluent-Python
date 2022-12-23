@@ -77,7 +77,7 @@
     <li>What is a module? (Difference between a Module and a Script/Folder)</li>
     <li>How to import a module?</li>
     <li>How to import a module with a different name?</li>
-    <li>If __name__</li>
+    <li>If __name__ == 'main':</li>
     </ol>
     
 18. Iterators
