@@ -18,9 +18,68 @@
 # Functional Programming
 
 14. Functions
+    <ol>
+    <li>Intro to Functions</li>
+    <li>Real World Examples</li>
+    <li>Concepts of functional programming</li>
+    <li>Functions definition</li>
+    <li>Functions with return values</li>
+    <li>Variable number of arguments, Default arguments and Named arguments</li>
+    <li>Optional arguments (args*, **kwargs)</li>
+    <li>Higher-order functions</li>
+    <li>Closures</li>
+    <li>Global, local, nonlocal and builtin functions</li>
+    <li>Decorators</li>
+    <li>Anonymous functions</li>
+    <li>Function pointers</li>
+    <li>Function composition</li>
+    <li>Function currying</li>
+    <li>Function memoization</li>
+    <li>Partial functions</li>
+    <li>Function overloading</li>
+    <li>Recursion</li>
+    <li>Function annotations</li>
+    <li>Design of the program</li>
+    </ol>
+
 15. Files
+    <ol>
+    <li>The definition of File</li>
+    
+    1. File types (Text/Binary, etc..)
+    2. How it (File System) works in OS (pointer, etc..)
+    <li>How to work with files in python (open, read/write, close)</li>
+    
+    1. Modes
+    2. Methods/Attributes
+    3. File exceptions handling
+    4. Full/Absolute paths
+    
+    <li>How to work with files of different format</li>
+    
+    1. CSV
+    2. JSON
+    3. XML
+    4. YAML
+    5. Pickle
+    </ol>
+
 16. Exceptions
+    <ol>
+    <li>What is an exception?</li>
+    <li>How to handle exceptions?</li>
+    <li>How to raise exceptions?</li>
+    <li>How to create custom exceptions?</li>
+    </ol>
+
 17. Imports
+    <ol>
+    <li>What is a module? (Difference between a Module and a Script/Folder)</li>
+    <li>How to import a module?</li>
+    <li>How to import a module with a different name?</li>
+    <li>If __name__</li>
+    </ol>
+    
 18. Iterators
 19. Generators
 20. Environments + Package Managers + poetry
