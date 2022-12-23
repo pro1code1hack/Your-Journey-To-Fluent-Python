@@ -48,12 +48,25 @@
 
 # Speed up your code
 
-36. Concurrent_vs_Parallel Programming (Threading)
+36. Concurrent_vs_Parallel Programming
 37. Gil(Threading)
 38. Multiprocessing
 39. Coroutines/ Asynchronous Programming
 40. Asyncio
 41. Garbage Collection
+
+⬆️ These topics - are incredibly important for python developers. I have been using listed resources down below for a long time and I can say that they are the best. I recommend it to everyone who wants to learn advanced python.
+
+Baron and Olivia 
+
+1. https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-1/learn-parallel-programming-basics?u=106534538
+2. https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-2/learn-parallel-programming-basics?u=106534538
+
+The best website for fast python
+
+1. https://superfastpython.com/
+2. https://superfastpython.com/python-concurrency-guides/
+
 
 # Additional stack:
 
