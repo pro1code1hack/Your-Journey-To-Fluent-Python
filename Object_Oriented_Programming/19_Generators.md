@@ -119,3 +119,7 @@ def generator():
     yield from funk2()
     yield from funk3()
 ```
+
+
+
+
