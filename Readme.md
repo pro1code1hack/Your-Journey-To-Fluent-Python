@@ -21,68 +21,56 @@ Ultimate open-source web analytics project
 
 ## Functional Programming
 14. Functions
-    <ol>
-    <li>Intro to Functions</li>
-    <li>Real World Examples</li>
-    <li>Concepts of functional programming</li>
-    <li>Functions definition</li>
-    <li>Functions with return values</li>
-    <li>Variable number of arguments, Default arguments and Named arguments</li>
-    <li>Optional arguments (args*, **kwargs)</li>
-    <li>Higher-order functions</li>
-    <li>Closures</li>
-    <li>Global, local, nonlocal and builtin functions</li>
-    <li>Decorators</li>
-    <li>Anonymous functions</li>
-    <li>Function pointers</li>
-    <li>Function composition</li>
-    <li>Function currying</li>
-    <li>Function memoization</li>
-    <li>Partial functions</li>
-    <li>Function overloading</li>
-    <li>Recursion</li>
-    <li>Function annotations</li>
-    <li>Design of the program</li>
-    </ol>
+ - Intro to Functions
+ - Real World Examples
+ - Concepts of functional programming
+ - Functions definition
+ - Functions with return values
+ - Variable number of arguments, Default arguments and Named arguments
+ - Optional arguments (args*, **kwargs)
+ - Higher-order functions
+ - Closures
+ - Global, local, nonlocal and builtin functions
+ - Decorators
+ - Anonymous functions
+ - Function pointers
+ - Function composition
+ - Function currying
+ - Function memoization
+ - Partial functions
+ - Function overloading
+ - Recursion
+ - Function annotations
+ - Design of the program
 
 15. Files
-    <ol>
-    <li>The definition of File</li>
-    
+ - The definition of File
     1. File types (Text/Binary, etc..)
     2. How it (File System) works in OS (pointer, etc..)
-    <li>How to work with files in python (open, read/write, close)</li>
-    
+ - How to work with files in python (open, read/write, close)
     1. Modes
     2. Methods/Attributes
     3. File exceptions handling
     4. Full/Absolute paths
-    
-    <li>How to work with files of different format</li>
-    
+ - How to work with files of different format
     1. CSV
     2. JSON
     3. XML
     4. YAML
     5. Pickle
-    </ol>
 
 16. Exceptions
-    <ol>
-    <li>What is an exception?</li>
-    <li>How to handle exceptions?</li>
-    <li>How to raise exceptions?</li>
-    <li>How to create custom exceptions?</li>
-    </ol>
+ - What is an exception?
+ - How to handle exceptions?
+ - How to raise exceptions?
+ - How to create custom exceptions?
 
 17. Imports
-    <ol>
-    <li>What is a module? (Difference between a Module and a Script/Folder)</li>
-    <li>How to import a module?</li>
-    <li>How to import a module with a different name?</li>
-    <li>If __name__ == 'main':</li>
-    </ol>
-    
+ - What is a module? (Difference between a Module and a Script/Folder)
+ - How to import a module?
+ - How to import a module with a different name?
+ - If __name__ == 'main':
+
 18. Iterators
 19. Generators
 20. Environments + Package Managers + poetry
@@ -118,14 +106,12 @@ Ultimate open-source web analytics project
 
 ## Courses
 ### Baron and Olivia 
-
 1. https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-1/learn-parallel-programming-basics?u=106534538
 2. https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-2/learn-parallel-programming-basics?u=106534538
 
 ### The best website for fast python
 1. https://superfastpython.com/
 2. https://superfastpython.com/python-concurrency-guides/
-
 
 ## Additional stack:
 42. SQL/NoSQL
@@ -135,15 +121,3 @@ Ultimate open-source web analytics project
 46. AWS/Azure
 47. CI/CD
 48. Q/A
-
-
-
-
-
-
-
-
-
-
-
-
