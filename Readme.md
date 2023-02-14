@@ -30,7 +30,7 @@ Roadmap for Python Engineers at [Swetrix](https://swetrix.com/?ref=python-roadma
 13. Debugging (complete tutorial)
 
 ## Functional Programming
-14. Functions
+14. [Functions](Functional_Programming/14.Functions.md)
  - Intro to Functions
  - Real World Examples
  - Concepts of functional programming
