@@ -6,6 +6,13 @@ Roadmap for Python Engineers at [Swetrix](https://swetrix.com/?ref=python-roadma
 
 # Senior Python Developer Roadmap
 
+## Authors
+- [Yehor Dremliuha](https://www.linkedin.com/in/yehor-dremliuha-0b6161212/)
+- [Udodenko Andrii](https://github.com/elusiivee)
+- [Vlad Tovstonoh](https://github.com/VladTovstonoh)
+- [Boyar Yehor](https://github.com/Dod900ls1)
+- [Olexandr Kamenivskyi](https://github.com/Sashabus)
+
 ## Base
 1. Introduction to Python (Features, Why?)
 2. Download and install IDE
