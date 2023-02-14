@@ -1,5 +1,9 @@
-# Base
+Roadmap for python employees in https://swetrix.com/ \
+Ultimate open-source web analytics project
 
+# Senior Python Developer roadmap
+
+## Base
 1. Introduction to Python (Features, Why?)
 2. Download and install IDE
 3. Primitive Datatypes, int/float/str/bool
@@ -15,8 +19,7 @@
 12. PyCharm Guide(https://realpython.com/pycharm-guide/#debugging-in-pycharm)
 13. Debugging (complete tutorial)
 
-# Functional Programming
-
+## Functional Programming
 14. Functions
     <ol>
     <li>Intro to Functions</li>
@@ -85,8 +88,7 @@
 20. Environments + Package Managers + poetry
 21. Data_Structures(Advanced)
 
-# Object Oriented Programming
-
+## Object Oriented Programming
 22. OOP (Рассипсать это всё шо тут)
 23. Context_Managers
 24. Design_Patterns
@@ -94,8 +96,7 @@
 26. SOLID
 27. Python '!=' Is Not 'is not' (Comparing Objects)
 
-# Advanced
-
+## Advanced
 28. Working with DB in python
 29. Logging
 30. Testing
@@ -105,8 +106,7 @@
 34. Proggramming Principles (DRY, KISS, YAGNI)
 35. Documenting python code (https://realpython.com/documenting-python-code/#why-documenting-your-code-is-so-important)
 
-# Speed up your code
-
+## Speed up your code
 36. Concurrent_vs_Parallel Programming
 37. Gil(Threading)
 38. Multiprocessing
@@ -116,19 +116,18 @@
 
 ⬆️ These topics - are incredibly important for python developers. I have been using listed resources down below for a long time and I can say that they are the best. I recommend it to everyone who wants to learn advanced python.
 
-Baron and Olivia 
+## Courses
+### Baron and Olivia 
 
 1. https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-1/learn-parallel-programming-basics?u=106534538
 2. https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-2/learn-parallel-programming-basics?u=106534538
 
-The best website for fast python
-
+### The best website for fast python
 1. https://superfastpython.com/
 2. https://superfastpython.com/python-concurrency-guides/
 
 
-# Additional stack:
-
+## Additional stack:
 42. SQL/NoSQL
 43. GIT
 44. Linux
