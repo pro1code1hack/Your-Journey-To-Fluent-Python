@@ -1,7 +1,10 @@
-Roadmap for python employees in https://swetrix.com/ \
-Ultimate open-source web analytics project
+<a href="https://swetrix.com/?ref=python-roadmap">
+    <img src="https://swetrix.com/assets/logo_blue.svg" alt="" height="60" />
+</a>
 
-# Senior Python Developer roadmap
+Roadmap for Python Engineers at [Swetrix](https://swetrix.com/?ref=python-roadmap) - Ultimate open-source web analytics service.
+
+# Senior Python Developer Roadmap
 
 ## Base
 1. Introduction to Python (Features, Why?)
