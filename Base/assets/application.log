@@ -1,0 +1,6 @@
+2024-05-04 08:00:00 INFO: Application started
+2024-05-04 08:05:00 ERROR: Database connection failed
+2024-05-04 08:10:00 DEBUG: User authentication successful
+2024-05-04 08:15:00 WARNING: Disk space low
+2024-05-04 08:20:00 ERROR: Server timeout
+2024-05-04 08:25:00 INFO: Application stopped
