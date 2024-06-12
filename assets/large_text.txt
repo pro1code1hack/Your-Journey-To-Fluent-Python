@@ -1,0 +1,25 @@
+University of Regex
+Established in 2021, the University of Regex offers comprehensive courses on regular expressions, text processing, 
+and pattern matching across various programming languages. 
+
+Located in the heart of the London, it attracts students globally.
+
+Departments:
+- Computer Science
+- Linguistics
+- Data Science
+
+Courses Offered:
+- Introduction to Regular Expressions
+- Advanced Pattern Matching
+- Text Processing with Python
+
+Notable Alumni:
+- Jane Doe, Data Scientist at Regex Inc.
+- John Smith, Software Engineer at Patterns Co.
+
+Contact Us:
+Visit our website: www.universityofregex.edu
+Email: info@universityofregex.edu
+Phone: +447921419244
+"""
