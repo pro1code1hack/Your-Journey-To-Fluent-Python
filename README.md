@@ -1,6 +1,46 @@
-# IN DEVELOPMENT 
+# 🐍 Your Journey to Fluent Python
+👋 Welcome to the thrilling journey to Python fluency! 
 
-## Content
+![alt text](prj-3.png)
+
+> [!NOTE]
+> Initially this repository was supposed to be a Senior Developer Roadmap and had to include not only Python but DB, AWS, Linux and BE Frameworks. 
+> That was not the best approach to do and cover everything at once, so I decided to focus only on Python and during the process this book has been created! 
+> I worked on it alone, almost 1.5 years, and hope that you will like it. In the future I have plans to colaborate with a major UK publisher to create the second version of this book. If you could provide any feedback, this would be extremely valuable. 
+> Attaching PDF version for free to improve your learning experience! 
+
+## 👤 Introduction
+
+My name is Yehor, and I'm the CTO and co-founder of Swetrix, a privacy-focused analytics platform. Additionally, I hold a Software Engineer position at a company based in Oxford, United Kingdom 🇬🇧.
+
+After years of studying programming, I've reached a solid level of proficiency, mainly through reading books and exploring different courses.
+
+I've found that many books in the programming world lack practical relevance and don’t give the knowledge to actually build real software. They're informative but don’t have interactivity and engagement with a learner at all.
+
+That's why I am excited to introduce a revolutionary approach to education and interaction with books. 
+
+This isn't just another book to read. It's a comprehensive guide that will walk you through every step of your learning journey, providing interactive experiences and personalised support along the way.
+
+In order to interact with me, you have 2 options:
+
+1. Open a PR and submit your homework/questions, and I will review it on Github directly.
+2. Join the [Discord server](https://discord.com/invite/s8MwCkMjDg) where you can submit your H/W for my personal review through tickets instead, ask general questions about the topic you are struggling with, and integrate into our Python society to excel your knowledge and skills together.
+
+In case you have any questions or would like to contact me directly, just do it!
+
+Email: yehor.dremliuha@gmail.com
+
+## 💬 Support
+
+| Options                              | Link                                         |
+|----------------------------------------------|----------------------------------------------|
+| Buy a book on Amazon                         | [Amazon](https://www.amazon.co.uk/dp/B0D7HRPCFH)                               |
+| Donate for businesses in Britain                          | [Coffee](https://ko-fi.com/pro1code1hack)    |
+| Buy a subscription on Swetrix ***(best option)***  | [Swetrix](https://swetrix.com/?ref=python-book)                      |
+| Put a star on this repo to show your support!  | ⭐ 
+| Share this book to your friends and colleagues! | 📢 
+
+## 📕 Content
 ### 1.Introduction To Programming
 - [1. What is programming?](01.Introduction-to-programming.md#1-what-is-programming)
 - [2.  Overview of Python](01.Introduction-to-programming.md#2-overview-of-python)
